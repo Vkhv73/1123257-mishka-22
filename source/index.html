@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/vector-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icons/vector-152.svg">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body wrapper">
+    <header class="page-header">
+      <section class="header-top">
+        <a href="" class="page-header__logo logo">
+          <img class="page-header__logo-image" src="img/mobile/mishka-logo-mobile.svg" alt="Мишка" width="86" height="35" >
+        <!--query--Не очень понял, почему надо удалять класс у изображения выше-->
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            =
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+              <li class="site-list__item"><a href="#">Новые поступления</a></li>
+              <li class="site-list__item"><a href="#">Распродажа</a></li>
+              <li class="site-list__item"><a href="#"><img src="img/mobile/search.svg" alt="Поиск" width="18" height="18"> Поиск по сайту</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="user-nav">
+          <a href="#" class="user-nav"><img src="img/mobile/cart.svg" alt="Корзина" width="21" height="18">Корзина: пока пуста</a>
+        </nav>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <section class="header-bottom">
+        <h1 class="visually-hidden">Милые штуки ручной<br> работы для дома</h1>
+        <p class="visually-hidden">Бесплатная доставка по России</p>
+        <a class="featured-option option-one" href="#">Предметы интерьера <img src="img/mobile/interior.svg" alt=""></a>
+        <a class="featured-option option-two" href="#">Детские игрушки <img src="img/mobile/toy-svg.svg" alt=""></a>
+      </section>
+    </header>
+    <!--query-- дальше правильно или нет? -->
+    <main class="page-main">
+      <section class="main-action">
+        <h1>Вязаные корзинки</h1>
+        <p class="action-subtytle">Товар недели</p>
+        <p class="action-text">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="action-options">
+          <tr>
+            <td>Цвет</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <p>Цена: 990 руб.</p>
+        <button class="button">Заказать</button>
+      </section>
+
+      <section class="main-about">
+        <h1>Коротко о нас:</h1>
+        <ul class="about-list">
+          <li class="about-item">Экологически чистые материалы</li>
+          <li class="about-item">Скандинавский стиль по российской цене</li>
+          <li class="about-item">Увеличивает лайкина фотографиях</li>
+          <li class="about-item">Связано вручную с любовью и умилением</li>
+          <li class="about-item">Поддержка отечественного производителя</li>
+          <li class="about-item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="main-reviews">
+        <h1>Отзывы</h1>
+        <ul class="reviews-list">
+          <li class="reviews-item current">
+            <p class="reviews-item__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+              у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <p class="reviews-item__correspondent">Анастасия Красильникова</p>
+            <p class="reviews-item__correspondent-adress">@misssssiskras</p>
+          </li>
+          <li class="reviews-item visually-hidden">
+            <p class="reviews-item__text">
+              Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
+              популярных инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
+            <p class="reviews-item__correspondent">Екатерина Красильникова</p>
+            <p class="reviews-item__correspondent-adress">@misssssiskras2</p>
+          </li>
+          <li class="reviews-item visually-hidden">
+            <p class="reviews-item__text">
+              Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
+            <p class="reviews-item__correspondent">Елена Красильникова</p>
+            <p class="reviews-item__correspondent-adress">@misssssiskras3</p>
+          </li>
+        </ul>
+        <ul class="reviews-pagination-list">
+          <li class="reviews-pagination-item">
+            <button class="reviews-pagination-item-link"
+              aria-label="Предыдущий отзыв"> < </button>
+          </li>
+          <li class="reviews-pagination-item">
+            <button class="reviews-pagination-item-link"
+              aria-label="Следующий отзыв"> > </button>
+          </li>
+        </ul>
+        <button class="button">Написать</button>
+      </section>
+
+
+
+    </main>
+    <footer class="page-footer">
+      <div class="footer-top">
+        <section class="contacts">
+
+        </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <!-- <p>e-mail: <a class="contacts-mail"
+              href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru</a></p>
+          <p class="contacts-address">
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8
+          </p> -->
+          <table class="contacts-list">
+            <tr>
+              <td class="contacts-item-name">e-mail:</td>
+              <td class="contacts-item-data"><a class="contacts-mail" href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <td class="contacts-item-name">адрес:</td>
+              <td class="contacts-item-data">
+                <p>
+                  г. Санкт-Петербургул. Большая Конюшенная д. 19/8, офис 101
+                </p>
+              </td>
+            </tr>
+          </table>
+          <a class="button contacts-form-link" href="form.html">Напишите нам</a>
+        </section>
+
+        <section class="footer-map">
+          <iframe class="map"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A74451f1abf43b821f2bdd577e958d63830ee9a5e52399f760a461dcfc58f8219&amp;source=constructor"
+            height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </iframe>
+
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <a href="" class="footer-bottom__logo logo  visually-hidden">
+          <img class="footer-bottom__logo-image" src="img/mobile/logo-footer.svg" alt="Мишка" width="102" height="34">
+          <!--que--Не очень понял, почему надо удалять класс у изображения выше-->
+        </a>
+        <section class="footer-bottom-social">
+          <img src="img/mobile/insta.svg" alt="Инстаграм" width="22" height="21">
+          <img src="img/mobile/fb.svg" alt="Фейсбук" width="15" height="29">
+          <img src="img/mobile/twitter.svg" alt="Твиттер" width="24" height="20">
+        </section>
+        <section class="footer-bottom-developer">
+          <p>Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-bottom-developer__link"><img
+              src="img/mobile/htmlacademy.svg" alt="Инстаграм" width="27" height="34"></a>
+        </section>
+      </div>
+    </footer>
+    <section class="action-order">
+      <form class="action-order__modal" action="post">
+      <h1>Добавить в корзину</h1>
+      <p>Выберите размер:</p>
+      <ul>
+        <li>S</li>
+        <li>M</li>
+        <li>L</li>
+      </ul>
+      <button class="button">добавить</button>
+    </form>
+    </section>
+
+
+
 
   </body>
 </html>
