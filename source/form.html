@@ -108,7 +108,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form-user user-name user-contact">
+      <fieldset class="user-name">
         <legend aria-label="Фамилия Имя Отчество">ФИО</legend>
         <div class="user-name__list">
           <p class="user-name__item">
@@ -128,22 +128,24 @@
           </p>
         </div>
       </fieldset>
-      <fieldset class="form-user user-contact-phone">
+      <fieldset class="user-contact-phone">
         <legend aria-label="Телефон">Тел</legend>
         <p class="user-contact-phone__item">
+          <label class="user-contact-phone__label visually-hidden" for="user-phone">Телефон</label>
           <input class="user-contact-phone__input" type="tel" name="user_phone" id="user-phone" placeholder="+7 XXX XXX XX XX*">
           <img class="user-contact-phone__img" src="img/mobile/phone.svg" alt="Значок телефона" width="25" height="24">
         </p>
       </fieldset>
-      <fieldset class="form-user user-contact-email">
+      <fieldset class="user-contact-email">
         <legend aria-label="Электронная почта">E-mail</legend>
         <p class="user-contact-email__item">
+          <label class="user-contact-email__label visually-hidden" for="user-email">E-mail</label>
           <input class="user-contact-email__input" type="email" name="user_email" id="user-email" placeholder="Ваш Email*">
           <img class="user-contact-email__img" src="img/mobile/mail.svg" alt="Значок телефона" width="25" height="24">
         </p>
       </fieldset>
-      <fieldset class="form-user user-contact-text">
-        <legend aria-label="пожелания к заказу">Доп</legend>
+      <fieldset class="user-contact-text">
+        <legend aria-label="Пожелания к заказу">Доп</legend>
         <p class="user-contact-text__item">
           <textarea class="user-contact-text__input" name="user_text" id="user-text" cols="25" rows="10"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
